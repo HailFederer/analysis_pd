@@ -9,7 +9,12 @@ import json
 
 
 # def json_request(url='', encoding='utf-8', success=None, error=json_error):
-def json_request(url='', encoding='utf-8', success=None, error=lambda e: print("%s : %s" % (e, datetime.now()), file=sys.stderr)):
+def json_request(
+        url='',
+        encoding='utf-8',
+        success=None,
+        error=lambda e: print("%s : %s" % (e, datetime.now()), file=sys.stderr)
+):
     try:
         resp = urlopen(Request(url))
         resp_body = resp.read().decode(encoding)

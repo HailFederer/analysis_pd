@@ -1,6 +1,6 @@
 import analysis_pd.collection.api as pdapi
 
-# test for
+# test for ps_gen_url
 
 # url = pdapi.pd_gen_url(
 #     'http://openapi.tour.go.kr/openapi/service/TourismResourceStatsService/getPchrgTrrsrtVisitorList',
